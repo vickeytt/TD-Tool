@@ -50,7 +50,7 @@ def submit():
     client.connect(hostname=IP, port=22, username="root", password=pwd)
     stdin, stdout, stderr = client.exec_command(cmd)
     # 输出结果
-    # print(stdout.read().decode('utf-8'))
+    #print(stdout.read().decode('utf-8'))
     result = str(stdout.read() , encoding = "utf-8")
     # 如果STP enable = no， 则执行所需代码
     if "yes" in result:
