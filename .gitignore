@@ -1,6 +1,4 @@
-__pycache__
+.idea
 build
 dist
-.idea
-
-
+__pycache__
