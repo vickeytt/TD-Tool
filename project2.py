@@ -63,7 +63,7 @@ def submit():
     client.connect(hostname=hostname, port=22, username="root", password=pwd)
     stdin, stdout, stderr = client.exec_command(cmd)
     # 输出结果
-    # print(stdout.read().decode('utf-8'))
+    print(stdout.read().decode('utf-8'))
     result = stdout.read().decode('utf-8')
     t.insert('insert', result)
     client.close()
@@ -71,6 +71,10 @@ def submit():
 
 b = Button(top, text="执行", command=submit)
 b.pack(side='bottom')
+
+
+
+
 # tab2
 window = Frame(tab2)
 window.pack(expand=YES, fill="both")

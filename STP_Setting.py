@@ -26,7 +26,7 @@ L2 = Label(top, text="密码")
 L2.place(x=10,y=50)
 E2 = Entry(top, show = '*',bd =5, width =20)
 E2.place(x=130,y=50)
-L3 = Label(top, text="版本: V1.01")
+L3 = Label(top, text="版本: 2020/09/07/V1.01")
 L3.place(x=10,y=90)
 
 
@@ -51,15 +51,16 @@ def submit():
     stdin, stdout, stderr = client.exec_command(cmd)
     # 输出结果
     # print(stdout.read().decode('utf-8'))
-    result = stdout.read()
+    result = str(stdout.read() , encoding = "utf-8")
     # 如果STP enable = no， 则执行所需代码
     if "yes" in result:
         pass
     else:
-        stdin, stdout, stderr = client.exec_command("uci set network.lan.stp=1 && uci commit && /etc/init.d/network restart")
+        stdin, stdout, stderr = client.exec_command(
+            "uci set network.lan.stp=1 && uci commit && /etc/init.d/network restart")
     time.sleep(1)
     stdin, stdout, stderr = client.exec_command(cmd)
-    result = stdout.read()
+    result = str(stdout.read() , encoding = "utf-8")
     if "yes" in result:
         tkinter.messagebox.showinfo("提示",message="STP设置成功")
     else:
@@ -82,14 +83,14 @@ def cancel():
     stdin, stdout, stderr = client.exec_command(cmd)
     # 输出结果
     # print(stdout.read().decode('utf-8'))
-    result = stdout.read()
+    result = str(stdout.read() , encoding = "utf-8")
     # 如果STP enable = yes， 则执行所需代码
     if "yes" in result:
         stdin, stdout, stderr = client.exec_command("uci set network.lan.stp=0 && uci commit && /etc/init.d/network restart")
     cmd = "brctl show | grep no | awk '{print $3}'"
     time.sleep(1)
     stdin, stdout, stderr = client.exec_command(cmd)
-    result = stdout.read()
+    result = str(stdout.read() , encoding = "utf-8")
     if "no" in result:
         tkinter.messagebox.showinfo("提示", message="STP取消成功")
     else:
@@ -110,7 +111,7 @@ def query():
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     client.connect(hostname=IP, port=22, username="root", password=pwd)
     stdin, stdout, stderr = client.exec_command(cmd)
-    result = stdout.read()
+    result = str(stdout.read() , encoding = "utf-8")
     if "yes" in result:
         tkinter.messagebox.showinfo("提示", message="STP已设置")
     else:
