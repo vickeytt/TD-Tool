@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84573222-a025-4da5-9857-2f301db9146d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/todaair-TD-Tool-TD-Tool-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/todaair-TD-Tool-TD-Tool-master.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STP_Setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/STP_Setting.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +129,7 @@
       <workItem from="1600738732631" duration="627000" />
       <workItem from="1600739532984" duration="25000" />
       <workItem from="1600739939750" duration="1914000" />
+      <workItem from="1600763145132" duration="247000" />
     </task>
     <task id="LOCAL-00001" summary="app update">
       <created>1600738911261</created>
@@ -213,10 +211,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600738866273" />
-    <state x="591" y="460" key="com.intellij.ide.util.TipDialog" timestamp="1600739940377">
+    <state x="591" y="460" key="com.intellij.ide.util.TipDialog" timestamp="1600763146170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="591" y="460" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600739940377" />
+    <state x="591" y="460" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600763146170" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600742229851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
